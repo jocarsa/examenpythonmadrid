@@ -16,6 +16,11 @@ def menu():
     # Si ha elegido listar, muestrame el contenido del archivo de datos
     if opcion == "1":
         print("Listamos los registros")
+        # Leo el archivo y muestro el contenido en pantalla
+        archivo = open("clientes.txt",'r')
+        for linea in archivo:
+            print(linea)
+        archivo.close()
     # Si ha elegido buscar, muestrame solo las entradas que coincidan
     elif opcion == "2":
         print("Buscamos un registro")
