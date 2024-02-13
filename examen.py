@@ -11,17 +11,23 @@ def menu():
     print("6.-Salir")   
     # Atrapamos la opción que ha seleccionado el usuario
     opcion = input("Opción selecionada: ")
-
-# Si ha elegido listar, muestrame el contenido del archivo de datos
-
-# Si ha elegido buscar, muestrame solo las entradas que coincidan
-
-# Si ha elegido insertar, pregunta los datos e inserta
-
-# Si ha elegido actualizar, pregunta cual se va a actualizar, pregunta datos, y reemplaza
-
-# Si ha elegido eliminar, pregunta criterio y elimina
-
-# Si ha elegido salir, sal
-
+    
+    # Si ha elegido listar, muestrame el contenido del archivo de datos
+    if opcion == "1":
+        print("Listamos los registros")
+    # Si ha elegido buscar, muestrame solo las entradas que coincidan
+    elif opcion == "2":
+        print("Buscamos un registro")
+    # Si ha elegido insertar, pregunta los datos e inserta
+    elif opcion == "3":
+        print("Insertamos un registro")
+    # Si ha elegido actualizar, pregunta cual se va a actualizar, pregunta datos, y reemplaza
+    elif opcion == "4":
+        print("Actualizamos un registro")
+    # Si ha elegido eliminar, pregunta criterio y elimina
+    elif opcion == "5":
+        print("Eliminamos un registro")
+    # Si ha elegido salir, sal
+    elif opcion == "6":
+        print("Salimos")
 menu()
