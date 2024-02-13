@@ -22,6 +22,9 @@ def menu():
     # Si ha elegido insertar, pregunta los datos e inserta
     elif opcion == "3":
         print("Insertamos un registro")
+        nombre = input("Indica el nombre del cliente: ")
+        email = input("Indica el email del cliente: ")
+        telefono = input("Indica el telefono del cliente: ")
     # Si ha elegido actualizar, pregunta cual se va a actualizar, pregunta datos, y reemplaza
     elif opcion == "4":
         print("Actualizamos un registro")
