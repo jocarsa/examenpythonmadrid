@@ -47,6 +47,18 @@ def menu():
     # Si ha elegido eliminar, pregunta criterio y elimina
     elif opcion == "5":
         print("Eliminamos un registro")
+        criterio = input("Introduce a quién deseas eliminar: ")
+        contenido = ""
+        # Leo el archivo y evito ese registro
+        archivo = open("clientes.txt",'r')
+        for linea in archivo:
+            if not criterio in linea:
+                contenido += linea
+        archivo.close()
+        # Ahora escribo el archivo con el contenido filtrado
+        archivo = open("clientes.txt",'w')
+        archivo.write(contenido)
+        archivo.close()
     # Si ha elegido salir, sal
     elif opcion == "6":
         print("Salimos")
