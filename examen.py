@@ -1,3 +1,4 @@
+import sys
 
 def menu():
     # Primero mostramos el menu
@@ -30,4 +31,5 @@ def menu():
     # Si ha elegido salir, sal
     elif opcion == "6":
         print("Salimos")
+        sys.exit()
 menu()
