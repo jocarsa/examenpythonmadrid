@@ -40,4 +40,5 @@ def menu():
     elif opcion == "6":
         print("Salimos")
         sys.exit()
+    menu()
 menu()
