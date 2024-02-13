@@ -44,6 +44,23 @@ def menu():
     # Si ha elegido actualizar, pregunta cual se va a actualizar, pregunta datos, y reemplaza
     elif opcion == "4":
         print("Actualizamos un registro")
+        contenido = ""
+        criterio = input("Introduce el cliente que quieras cambiar")
+        nombre = input("Indica el nombre del cliente a actualizar: ")
+        email = input("Indica el email del cliente a actualizar: ")
+        telefono = input("Indica el telefono del cliente a actualizar: ")
+        # Primero leemos y volcamos el contenido:
+        archivo = open("clientes.txt",'r')
+        for linea in archivo:
+            if not criterio in linea:
+                contenido += linea
+            else:
+                contenido += nombre+","+email+","+telefono+",\n" 
+        archivo.close()
+        # Ahora escribimos el archivo
+        archivo = open("clientes.txt",'w')
+        archivo.write(contenido)
+        archivo.close()
     # Si ha elegido eliminar, pregunta criterio y elimina
     elif opcion == "5":
         print("Eliminamos un registro")
