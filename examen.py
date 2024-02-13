@@ -26,6 +26,10 @@ def menu():
         nombre = input("Indica el nombre del cliente: ")
         email = input("Indica el email del cliente: ")
         telefono = input("Indica el telefono del cliente: ")
+        # Ahora guardamos los datos en el archivo
+        archivo = open("clientes.txt",'a')
+        archivo.write(nombre+","+email+","+telefono+",\n")
+        archivo.close()
     # Si ha elegido actualizar, pregunta cual se va a actualizar, pregunta datos, y reemplaza
     elif opcion == "4":
         print("Actualizamos un registro")
