@@ -24,6 +24,12 @@ def menu():
     # Si ha elegido buscar, muestrame solo las entradas que coincidan
     elif opcion == "2":
         print("Buscamos un registro")
+        criterio = input("Indica a quién buscas: ")
+        archivo = open("clientes.txt",'r')
+        for linea in archivo:
+            if criterio in linea:
+                print(linea)
+        archivo.close()
     # Si ha elegido insertar, pregunta los datos e inserta
     elif opcion == "3":
         # Primero recogemos los datos
