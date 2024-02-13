@@ -21,6 +21,7 @@ def menu():
         print("Buscamos un registro")
     # Si ha elegido insertar, pregunta los datos e inserta
     elif opcion == "3":
+        # Primero recogemos los datos
         print("Insertamos un registro")
         nombre = input("Indica el nombre del cliente: ")
         email = input("Indica el email del cliente: ")
