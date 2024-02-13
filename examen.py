@@ -1,7 +1,7 @@
 
 def menu():
     # Primero mostramos el menu
-    print("Programa de empresa (c) 2024 Jose Vicenet Carratala")
+    print("Programa de empresa (c) 2024 Jose Vicente Carratala")
     print("Escoge una opcion de las siguientes:")
     print("1.-Listar")
     print("2.-Buscar")
@@ -9,7 +9,8 @@ def menu():
     print("4.-Actualizar")
     print("5.-Eliminar")
     print("6.-Salir")   
-# Atrapamos la opción que ha seleccionado el usuario
+    # Atrapamos la opción que ha seleccionado el usuario
+    opcion = input("Opción selecionada: ")
 
 # Si ha elegido listar, muestrame el contenido del archivo de datos
 
@@ -22,3 +23,5 @@ def menu():
 # Si ha elegido eliminar, pregunta criterio y elimina
 
 # Si ha elegido salir, sal
+
+menu()
